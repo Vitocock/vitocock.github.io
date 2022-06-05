@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif    ;
+    --background-red : #b22222;
+    --white : #fff;
+    --secondary-red : #81001a;
+}
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: rgb(234, 234, 234);
+}
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items:initial;
+}
+
+/*---------------------        Header         -------------------------*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+    background-color: var(--background-red);
+}
+header div {
+    padding: 1%;
+}
+header div img {
+    width: 6rem;
+    filter: brightness(0) invert(1);
+}
+
+/*------------------------           Search           -------------------------*/
+.div-form {
+    background-color: var(--background-red);
+    margin: 2%;
+    padding: 2%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+form{
+    background-color: var(--background-red);
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 600;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+form input{
+    width: 100%;
+    padding: 0.5%;
+    height: 1.5em;
+    border: none;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+}
+form button, .div-buttons button{
+    width: 100%;
+    border: none;
+    padding: 1%;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+form button:hover{
+    cursor: pointer;
+}
+
+/*-------------------------          Save Form            ----------------------------*/
+
+.save-form {
+    background-color: var(--secondary-red);
+    padding: 2%;
+    margin-top: 4%;
+}
+
+.div-buttons {
+    display: flex;
+    flex-direction: row;
+}
+.div-buttons button {
+    background-color: #808080;
+    color: var(--white);    
+    text-transform: capitalize;
+    border-radius: 10px;
+    transition: 0.3s ease   ;
+    justify-content: center ;
+}
+.div-buttons button:hover, .div-buttons button:last-child:hover {
+    cursor: pointer;
+    background-color: rgb(54, 54, 54);
+}
+.div-buttons button:last-child {
+    background-color: var(--secondary-red);
+    width: 40%;
+}
+
+/*-------------------------      Bus Info       ---------------------------*/
+
+.bus-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+    background-color: var(--background-red);
+    color: var(--white);
+    border-radius: 10px;
+    padding: 2%;
+    flex-grow: 1;
+}
+.bus-info h3 {
+    font-size: 1.5rem;
+    padding: 2%;
+}
+.initial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1rem;
+    background-color: var(--background-red);
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 100% ;
+}
+.initial img {
+    margin-top: 2%;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+}
+tr {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr; 
+   grid-row: auto;
+   align-items: center;
+   padding: 1%;
+   font-size: 120%;
+}
+tr:nth-child(even) {
+    background-color: #fff;
+}
+tr:nth-child(odd) {
+    background-color: rgb(207, 205, 205);
+}
+td, th {
+    text-align: center;
+}
+tbody tr:first-child {
+    background-color: var(--secondary-red);
+}
+td {
+    color: black;
+}
+
+
+
+.hide {
+    display: none;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultor de Viajes</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="./img/red.png" alt="red">
+        </div>
+    </header>
+    <main>
+        <div class="div-form" id="div-form">
+            <form id="form" class="form">
+                <label for="stop" >Ingrese el codigo del paradero: </label>
+                <input type="text" id="stop" placeholder="Ej: PD559"  name="stop">
+                <button type="submit">Buscar</button>
+                <button id="save" type="button">Guardar Codigo</button>
+            </form>
+                
+            <form class="save-form hide" id="save-form">
+                <label for="stop-name">Nombre de la parada: </label>
+                <input type="text" name="stop-name" id="stop-name" placeholder="Parada 10 - Plaza de Maipu">
+                <label for="stop" >Codigo del paradero: </label>
+                <input type="text" id="stop" placeholder="Ej: PD559"  name="stop">
+                <button type="submit">Guardar Codigo</button>
+            </form>
+        </div>
+        <div class="bus-info" id="bus-info">
+               
+            <div class="initial">
+                Busca un recorrido
+                <img src="./img/autobus.png" alt="bus">
+            </div> 
+        </div>
+    </main>
+    <footer></footer>
+    <script src="./main.js"></script>
+    <script src="./saveStop.js"></script>
+</body>
+</html>
