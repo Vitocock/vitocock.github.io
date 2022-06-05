@@ -25,7 +25,7 @@ const busTemplate = (bus) => {
     <tr>
         <td>${bus.service}</td>
         <td>${bus.meters_distance} mts.</td>
-        <td>${bus.min_arrival_time}</td>
+        <td>${bus.max_arrival_time}</td>
     </tr>
     `
 }
