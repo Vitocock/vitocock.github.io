@@ -21,6 +21,9 @@ const createTable = (name) => {
     </table>`
 }
 const busTemplate = (bus) => {
+    if (bus.meters_distance <= 100) {
+        bus.max_arrival_time = 'Llega'
+    }
     return `
     <tr>
         <td>${bus.service}</td>
